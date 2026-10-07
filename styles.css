@@ -1,0 +1,148 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tampilan keseluruhan */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f6fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #ff74ef;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Foto profil */
+header img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 15px;
+}
+
+/* Nama */
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+/* Status */
+header p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+/* Navigasi */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Konten utama */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Setiap section */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Judul section */
+section h2 {
+    color: #6c63ff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+}
+
+/* Pendidikan */
+section h3 {
+    margin-top: 15px;
+    color: #333;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+/* Keahlian */
+ul {
+    padding-left: 20px;
+}
+
+#keahlian li {
+    margin-bottom: 8px;
+}
+
+/* Kontak */
+#kontak ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#kontak li {
+    margin-bottom: 10px;
+}
+
+#kontak a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+#kontak a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
