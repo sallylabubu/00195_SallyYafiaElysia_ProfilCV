@@ -1,45 +1,49 @@
-/* Reset dasar */
+
+/* Pengaturan dasar */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-/* Tampilan keseluruhan */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f6fa;
-    color: #333;
-    line-height: 1.6;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8f6ff;
+    color: #343047;
+    line-height: 1.7;
 }
 
-/* Header */
+/* Header utama */
 header {
-    background-color: #ff74ef;
-    color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 50px 20px 35px;
+    background: linear-gradient(135deg, #e7ddff, #f8e9f5);
+    border-bottom: 1px solid #e4d8f5;
 }
 
 /* Foto profil */
 header img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid white;
+    border: 5px solid white;
+    box-shadow: 0 8px 25px rgba(91, 63, 135, 0.18);
     margin-bottom: 15px;
 }
 
 /* Nama */
 header h1 {
-    font-size: 32px;
+    font-size: 2.3rem;
+    color: #60449a;
     margin-bottom: 5px;
 }
 
-/* Status */
+/* Deskripsi */
 header p {
-    font-size: 16px;
+    color: #6c617d;
+    font-size: 1rem;
     margin-bottom: 25px;
 }
 
@@ -47,102 +51,206 @@ header p {
 nav {
     display: flex;
     justify-content: center;
-    gap: 25px;
     flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
 }
 
 nav a {
-    color: white;
     text-decoration: none;
-    font-weight: bold;
+    color: #60449a;
+    background: white;
+    padding: 9px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(91, 63, 135, 0.08);
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background: #7657b5;
+    color: white;
+    transform: translateY(-3px);
 }
 
 /* Konten utama */
 main {
     max-width: 900px;
-    margin: 30px auto;
-    padding: 0 20px;
+    margin: 40px auto;
+    padding: 0 22px;
 }
 
-/* Setiap section */
+/* Card setiap bagian */
 section {
-    background-color: white;
-    padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 18px;
+    border: 1px solid #eee8f8;
+    box-shadow: 0 5px 20px rgba(70, 48, 110, 0.06);
+    scroll-margin-top: 20px;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
 }
 
-/* Judul section */
+section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(70, 48, 110, 0.1);
+}
+
+/* Judul bagian */
 section h2 {
-    color: #6c63ff;
+    color: #7050ad;
+    font-size: 1.5rem;
     margin-bottom: 15px;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee5ff;
 }
 
-/* Pendidikan */
+/* Subjudul pendidikan */
 section h3 {
-    margin-top: 15px;
-    color: #333;
+    color: #49386a;
+    font-size: 1.1rem;
+    margin-top: 18px;
+    margin-bottom: 4px;
 }
 
+/* Paragraf */
 section p {
-    margin-bottom: 10px;
+    color: #655f72;
 }
 
-/* Keahlian */
-ul {
-    padding-left: 20px;
-}
-
-#keahlian li {
-    margin-bottom: 8px;
-}
-
-/* Kontak */
-#kontak ul {
+/* Daftar keahlian dan kontak */
+section ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
 }
 
-#kontak li {
-    margin-bottom: 10px;
+section li {
+    margin: 10px 0;
+    padding: 10px 14px;
+    background: #f8f5ff;
+    border-radius: 10px;
+    border-left: 4px solid #a58bd7;
 }
 
-#kontak a {
-    color: #6c63ff;
+/* Link kontak */
+section li a {
+    color: #7050ad;
     text-decoration: none;
+    font-weight: 500;
+    overflow-wrap: anywhere;
 }
 
-#kontak a:hover {
+section li a:hover {
+    color: #a05caa;
     text-decoration: underline;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    background-color: #222;
-    color: white;
-    padding: 20px;
-    margin-top: 30px;
+    background: #e9e0f8;
+    color: #65547e;
+    padding: 22px 15px;
+    margin-top: 50px;
+    font-size: 0.9rem;
 }
+
+
+/* Area foto profil */
+.foto-profil {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Foto profil */
+
+.foto-profil {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Semua sparkle */
+.sparkle {
+    position: absolute;
+    color: #9874d5;
+    line-height: 1;
+    pointer-events: none;
+    animation: sparkle-glow 1.8s ease-in-out infinite alternate;
+}
+
+
+.sparkle-1  { top: 18px; left: 35px; font-size: 25px; }
+.sparkle-2  { top: 35px; right: 30px; font-size: 23px; }
+.sparkle-3  { bottom: 35px; left: 28px; font-size: 20px; }
+.sparkle-4  { bottom: 20px; right: 30px; font-size: 25px; }
+
+.sparkle-5  { top: 50px; left: 12px; font-size: 15px; }
+.sparkle-6  { top: 60px; right: 8px; font-size: 17px; }
+.sparkle-7  { bottom: 60px; left: 12px; font-size: 15px; }
+.sparkle-8  { bottom: 50px; right: 10px; font-size: 16px; }
+
+.sparkle-9  { top: 8px; left: 85px; font-size: 13px; }
+.sparkle-10 { top: 8px; right: 80px; font-size: 14px; }
+.sparkle-11 { bottom: 10px; left: 85px; font-size: 20px; }
+.sparkle-12 { bottom: 8px; right: 85px; font-size: 20px; }
+
+
+/* Efek bintang berkilau */
+@keyframes sparkle-glow {
+    0% {
+        opacity: .3;
+        transform: scale(.7) rotate(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.25) rotate(25deg);
+    }
+}
+
 
 /* Tampilan HP */
 @media (max-width: 600px) {
+    header {
+        padding: 35px 15px 28px;
+    }
+
+    header img {
+        width: 125px;
+        height: 125px;
+    }
+
     header h1 {
-        font-size: 26px;
+        font-size: 1.8rem;
     }
 
     nav {
-        gap: 12px;
+        gap: 8px;
+    }
+
+    nav a {
+        padding: 8px 13px;
+        font-size: 0.85rem;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 0 14px;
     }
 
     section {
-        padding: 20px;
+        padding: 22px 18px;
     }
 }
